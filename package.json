@@ -1,0 +1,20 @@
+{
+  "name": "cf-consul-backup",
+  "version": "1.0.0",
+  "description": "consul backup",
+  "main": "index.js",
+  "scripts": {
+    "test": "ls -l node_modules && echo OK",
+    "start": "node backup.js"
+  },
+  "author": "Codefresh",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "consul": "^0.25.0",
+    "dateformat": "^1.0.12",
+    "q": "^1.4.1",
+    "request": "^2.72.0",
+    "winston": "^2.2.0"
+  }
+}
