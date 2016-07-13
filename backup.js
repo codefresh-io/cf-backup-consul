@@ -59,7 +59,7 @@ class ConsulBackup {
             .then(serviceHealthObj => Q.resolve(JSON.stringify(serviceHealthObj)));
     }
 
-    backupKv(){
+    backupAll(){
         var self = this;
         return Q.all([ self.getKv(), self.getNodesServices(), self.getServicesHealth()])
 
@@ -93,4 +93,4 @@ class ConsulBackup {
 
 logger.info("\nStarting consul backup ...");
 var Backup = new ConsulBackup();
-Backup.backupKv();
+Backup.backupAll();
