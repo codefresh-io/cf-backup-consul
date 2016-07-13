@@ -23,7 +23,7 @@ class ConsulBackup {
 
     constructor() {
         this.fsPrefix = dateformat(new Date(), 'yyyy-mm-dd_H-MM-ss');
-        this.consulBackupFile = util.format('consul-backup-%s-%s.zip', this.fsPrefix, os.hostname())
+        this.consulBackupFile = util.format('%s/consul-backup-%s-%s.zip', config.environment, this.fsPrefix, os.hostname())
     }
 
     getKv(){

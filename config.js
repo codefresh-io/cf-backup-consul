@@ -9,7 +9,7 @@ var config = {
         port: '8500',
         aclToken: ''
     },
-    tmpdir: '/tmp/consul-backup',
+    environment: 'local',
     s3bucket: 'cf-backup-consul'
 };
 
