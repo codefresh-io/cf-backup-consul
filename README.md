@@ -13,7 +13,7 @@ docker run --rm -v "/opt/codefresh/cf-backup-consul/aws-credentials:/root/.aws/c
 
 ### Restore
 
-##### download zup from s3
+##### download consul-backup-*-zip from s3
 
 ```bash
 aws s3 cp s3://cf-backup-consul/google_production/consul-backup-2016-07-19_9-57-02-cf-usc1b-consul-3.zip /tmp/
