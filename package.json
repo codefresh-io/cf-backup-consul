@@ -10,7 +10,7 @@
   "author": "Codefresh",
   "license": "ISC",
   "dependencies": {
-    "adm-zip": "^0.4.7",
+    "adm-zip": "^0.5.1",
     "aws-sdk": "^2.4.6",
     "consul": "^0.25.0",
     "dateformat": "^1.0.12",
